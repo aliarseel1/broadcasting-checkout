@@ -1,6 +1,7 @@
 import express from "express";
 import bodyParser from "body-parser";
 import path from "path";
+import moment from 'moment-timezone';
 import { randomUUID } from "crypto";
 import { readJSON, addToJSON, removeFromJSON } from "./modules/jsonHelper.js";
 
@@ -46,6 +47,8 @@ app.post("/post-checkout", async (req, res) => {
       return items[shortKey];
     });
 
+  const cstTime = moment().tz("America/Chicago").format("MM/DD/YYYY hh:mm:ss A");
+
   const newCheckout = {
     id: randomUUID(),
     name: req.body.name,
@@ -53,7 +56,7 @@ app.post("/post-checkout", async (req, res) => {
     location: req.body.location,
     duration: req.body.duration,
     reason: req.body.reason,
-    timestamp: new Date().toLocaleString(),
+    timestamp: cstTime,
   };
   await addToJSON(path, newCheckout);
   res.redirect("/checkin");

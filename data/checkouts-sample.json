@@ -1,6 +1,6 @@
 [
   {
-    "id": "dfbef4f9-1888-4158-a431-d3edb122ce15",
+    "id": "7d8e1fe6-b775-488c-a7dd-0269c3134cf9",
     "name": "John Doe",
     "equipment": [
       "Big Camera 1 (BC01)",
@@ -8,11 +8,11 @@
     ],
     "location": "7th Grade Math Pod",
     "duration": "10 minutes",
-    "reason": "For street interviews.",
-    "timestamp": "9/26/2025, 1:05:49 AM"
+    "reason": "For street interviews",
+    "timestamp": "09-26-2025 02:08:06 AM"
   },
   {
-    "id": "d37ca945-7446-454a-8523-e08bc4bd9305",
+    "id": "70b38cfd-711d-41e7-8aa2-be986fc1483b",
     "name": "Arseel Ali",
     "equipment": [
       "Big Camera 2 (BC02)",
@@ -20,11 +20,11 @@
     ],
     "location": "Library",
     "duration": "20 minutes",
-    "reason": "For the librarian appreciation segment.",
-    "timestamp": "9/26/2025, 1:08:13 AM"
+    "reason": "For the librarian appreciation segment",
+    "timestamp": "09-26-2025 02:08:35 AM"
   },
   {
-    "id": "29b384b4-de0b-400b-80ca-10bf5cdb5691",
+    "id": "bde446f1-0988-463a-95c7-dc7e96ad0751",
     "name": "Jane Doe",
     "equipment": [
       "Small Camera 1 (SC01)",
@@ -32,7 +32,7 @@
     ],
     "location": "Cafeteria",
     "duration": "15 minutes",
-    "reason": "For the skit for the day in the life segment.",
-    "timestamp": "9/26/2025, 1:16:24 AM"
+    "reason": "For the skit for the day in the life segment",
+    "timestamp": "09-26-2025 02:09:03 AM"
   }
 ]

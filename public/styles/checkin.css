@@ -69,13 +69,16 @@ button {
   background-color: #4caf50;
   color: #e0e0e0;
   border: none;
-  padding: 10px 20px;
+  padding: 15px 20px;
+  margin-top: 10px;
+  font-size: 1em;
+  font-weight: 500;
   border-radius: 8px;
   transition: ease-in-out 0.2s;
 }
 
 button:hover {
-  background-color: #45a049;
+  background-color: #3c8b40;
   cursor: pointer;
 }
 
