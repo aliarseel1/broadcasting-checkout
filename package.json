@@ -1,0 +1,19 @@
+{
+  "name": "broadcasting-checkout",
+  "version": "1.0.0",
+  "description": "The SMS broadcasting equipment checkout application.",
+  "main": "server.js",
+  "type": "module",
+  "scripts": {
+    "dev": "npx nodemon server.js"
+  },
+  "author": "Arseel Ali",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^2.2.0",
+    "ejs": "^3.1.10",
+    "express": "^5.1.0",
+    "sweetalert2": "^11.23.0",
+    "uuid": "^13.0.0"
+  }
+}

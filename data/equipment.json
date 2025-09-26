@@ -1,0 +1,48 @@
+{
+    "bigCameras": [
+        {
+            "name": "Big Camera 1 (BC01)",
+            "id": "bc01"
+        },
+        {
+            "name": "Big Camera 2 (BC02)",
+            "id": "bc02"
+        },
+        {
+            "name": "Big Camera 3 (BC03)",
+            "id": "bc03"
+        }
+    ],
+    "smallCameras": [
+        {
+            "name": "Small Camera 1 (SC01)",
+            "id": "sc01"
+        },
+        {
+            "name": "Small Camera 2 (SC02)",
+            "id": "sc02"
+        },
+        {
+            "name": "Small Camera 3 (SC03)",
+            "id": "sc03"
+        }
+    ],
+    "microphones": [
+        {
+            "name": "Wireless Lavalier Microphone 1 (WLM01)",
+            "id": "wlm01"
+        },
+        {
+            "name": "Wireless Lavalier Microphone 2 (WLM02)",
+            "id": "wlm02"
+        },
+        {
+            "name": "Handheld Microphone 1 (HHM01)",
+            "id": "hhm01"
+        },
+        {
+            "name": "Handheld Microphone 2 (HHM02)",
+            "id": "hhm02"
+        }
+    ]
+}

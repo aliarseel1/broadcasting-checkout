@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Checkout | Broadcasting Inventory System</title>
+    <link rel="stylesheet" href="./styles/index.css" />
+  </head>
+  <body>
+    <nav>
+      <a href="/" data-active>Checkout</a>
+      <a href="/checkin" id="checkin-link">Checkin (<span id="outstanding-count"><%=outstanding%></span>)</a>
+    </nav>
+    <div class="content">
+      <form action="/post-checkout" method="post">
+        <h1>Broadcasting Equipment Checkout</h1>
+        <div class="field">
+          <label for="name">Enter your name:</label>
+          <input
+            type="text"
+            id="name"
+            name="name"
+            autocomplete="off"
+            placeholder="John Smith"
+            required
+            autofocus
+          />
+        </div>
+
+        <div class="field">
+          <label>Chose what equipment you are checking out:</label>
+          <div class="options">
+            <h3>Big Cameras:</h3>
+            <div class="field">
+              <input type="checkbox" id="item-bc01" name="item-bc01" />
+              <label for="item-bc01">Big Camera 1 (BC01)</label>
+            </div>
+
+            <div class="field">
+              <input type="checkbox" id="item-bc02" name="item-bc02" />
+              <label for="item-bc02">Big Camera 2 (BC02)</label>
+            </div>
+
+            <h3>Small Cameras:</h3>
+            <div class="field">
+              <input type="checkbox" id="item-sc01" name="item-sc01" />
+              <label for="item-sc01">Small Camera 1 (SC01)</label>
+            </div>
+
+            <div class="field">
+              <input type="checkbox" id="item-sc02" name="item-sc02" />
+              <label for="item-sc02">Small Camera 2 (SC01)</label>
+            </div>
+
+            <div class="field">
+              <input type="checkbox" id="item-sc03" name="item-sc03" />
+              <label for="item-sc03">Small Camera 3 (SC01)</label>
+            </div>
+
+            <h3>Microphones:</h3>
+            <div class="field">
+              <input type="checkbox" id="item-wlm01" name="item-wlm01" />
+              <label for="item-wlm01"
+                >Wireless Lavalier Microphone 1 (WLM01)</label
+              >
+            </div>
+            <div class="field">
+              <input type="checkbox" id="item-wlm02" name="item-wlm02" />
+              <label for="item-wlm02"
+                >Wireless Lavalier Microphone 2 (WLM02)</label
+              >
+            </div>
+            <div class="field">
+              <input type="checkbox" id="item-hhm01" name="item-hhm01" />
+              <label for="item-hhm01">Handheld Microphone 1 (HHM01)</label>
+            </div>
+            <div class="field">
+              <input type="checkbox" id="item-hhm02" name="item-hhm02" />
+              <label for="item-hhm02">Handheld Microphone 2 (HHM02)</label>
+            </div>
+          </div>
+        </div>
+
+        <div class="field">
+          <label for="location">Where are you taking the equipment: </label>
+          <input
+            type="text"
+            id="location"
+            name="location"
+            placeholder="7th Grade Math Pod"
+            autocomplete="off"
+            required
+          />
+        </div>
+
+        <div class="field">
+          <label for="duration">How long will you be out: </label>
+          <input
+            type="text"
+            id="duration"
+            name="duration"
+            placeholder="10 minutes"
+            autocomplete="off"
+            required
+          />
+        </div>
+
+        <div class="field">
+          <label for="reason">What is your reason for checkout: </label>
+          <input
+            type="text"
+            id="reason"
+            name="reason"
+            placeholder="For street interviews"
+            autocomplete="off"
+            required
+          />
+        </div>
+
+        <div class="field">
+          <label for="permission"
+            >Did you get permission from your teacher:
+          </label>
+          <input type="checkbox" id="permission" name="permission" required />
+        </div>
+
+        <button type="submit">Checkout</button>
+      </form>
+    </div>
+
+    <footer>
+      <p>Developed by Arseel Ali</p>
+    </footer>
+
+    <script src="./scripts/index.js"></script>
+  </body>
+</html>

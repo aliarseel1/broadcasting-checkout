@@ -1,0 +1,38 @@
+[
+  {
+    "id": "dfbef4f9-1888-4158-a431-d3edb122ce15",
+    "name": "John Doe",
+    "equipment": [
+      "Big Camera 1 (BC01)",
+      "Wireless Lavalier Microphone 1 (WLM01)"
+    ],
+    "location": "7th Grade Math Pod",
+    "duration": "10 minutes",
+    "reason": "For street interviews.",
+    "timestamp": "9/26/2025, 1:05:49 AM"
+  },
+  {
+    "id": "d37ca945-7446-454a-8523-e08bc4bd9305",
+    "name": "Arseel Ali",
+    "equipment": [
+      "Big Camera 2 (BC02)",
+      "Wireless Lavalier Microphone 2 (WLM02)"
+    ],
+    "location": "Library",
+    "duration": "20 minutes",
+    "reason": "For the librarian appreciation segment.",
+    "timestamp": "9/26/2025, 1:08:13 AM"
+  },
+  {
+    "id": "29b384b4-de0b-400b-80ca-10bf5cdb5691",
+    "name": "Jane Doe",
+    "equipment": [
+      "Small Camera 1 (SC01)",
+      "Handheld Microphone 1 (HHM01)"
+    ],
+    "location": "Cafeteria",
+    "duration": "15 minutes",
+    "reason": "For the skit for the day in the life segment.",
+    "timestamp": "9/26/2025, 1:16:24 AM"
+  }
+]

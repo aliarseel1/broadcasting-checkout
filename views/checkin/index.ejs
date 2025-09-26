@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Checkin | Broadcasting Inventory System</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../styles/checkin.css" />
+  </head>
+  <body>
+    <nav>
+      <a href="/">Checkout</a>
+      <a href="/checkin" id="checkin-link" data-active>Checkin (<span id="outstanding-count"><%=outstanding%></span>)</a>
+    </nav>
+    <div class="content">
+      <h1>Broadcasting Equipment Checkin</h1>
+      <div class="cards">
+        <% data.forEach(card => { %>
+        <div class="card" data-id="<%=card.id%>">
+          <div class="field">
+            <h3><%=card.name%></>
+          </div>
+
+          <div class="field">
+            <h3>ID:</h3>
+            <p><%=card.id%></p>
+          </div>
+
+          <div class="field equipment-list">
+            <h3>Equipment:</h3>
+            <ul>
+              <% if (card.equipment.length !== 0) { %> <%
+              card.equipment.forEach(item => { %>
+              <li><%=item%></li>
+              <% })} else { %>
+              <p>No equipment listed.</p>
+              <% } %>
+            </ul>
+          </div>
+
+          <div class="field">
+            <h3>Location:</h3>
+            <p><%=card.location%></p>
+          </div>
+
+          <div class="field">
+            <h3>Duration:</h3>
+            <p><%=card.duration%></p>
+          </div>
+
+          <div class="field">
+            <h3>Reason:</h3>
+            <p><%=card.reason%></p>
+          </div>
+
+          <div class="field">
+            <h3>Timestamp:</h3>
+            <p><%=card.timestamp%></p>
+          </div>
+
+          <button class="checkin-btn" data-id="<%=card.id%>">Checkin</button>
+        </div>
+        <% }) %>
+      </div>
+    </div>
+
+    <footer>
+      <p>Developed by Arseel Ali</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="./scripts/checkin.js"></script>
+  </body>
+</html>
