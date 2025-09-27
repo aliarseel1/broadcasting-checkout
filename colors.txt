@@ -1,0 +1,33 @@
+Colors:
+
+Base Colors:
+
+Background: #121212 (very dark gray/black)
+Surface / Cards: #1E1E1E (slightly lighter dark gray)
+Borders / Dividers: #2C2C2C
+
+Text Colors:
+
+Primary Text: #E0E0E0 (off-white, easy on eyes)
+Secondary Text / Subtle: #A0A0A0 (gray)
+Accent Text / Highlights: #FFD369 (warm yellow)
+
+Accent / Buttons:
+
+Primary Button / Accent: #4CAF50 (green)
+Secondary / Info: #2196F3 (blue)
+Warning / Errors: #FF5252 (red)
+
+Optional Highlights:
+
+Hover / Active States: lighten/darken the accent by ~10–15%
+Example: #4CAF50 → hover #66BB6A
+
+
+Fonts:
+
+Primary Font (UI / Headings)
+Font: Inter
+
+Secondary Font (Body / Subtext)
+Font: Roboto or Source Sans Pro

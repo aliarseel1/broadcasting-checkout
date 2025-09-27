@@ -6,7 +6,7 @@ import { randomUUID } from "crypto";
 import { readJSON, addToJSON, removeFromJSON } from "./modules/jsonHelper.js";
 
 const app = express();
-const PORT = 8080;
+const PORT = 3000;
 
 const items = {
   bc01: "Big Camera 1 (BC01)",
@@ -82,7 +82,6 @@ app.delete("/checkin/:id", async (req, res) => {
   res.json({ success });
 });
 
-app.listen(PORT, () => {
+app.listen(PORT, "0.0.0.0", () => {
   console.log(`Server is running and active at http://localhost:${PORT}`);
 });
-
